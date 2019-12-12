@@ -11,18 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-
-    $tasks = [
-      'Go to the store',
-      'Go to the market',
-      'Go somewhere else!'
-    ];
-
-    return view('home', [
-      'tasks' => $tasks
-    ]);
-});
+Route::get('/', 'PagesController@home');
 
 Route::get('/experience', function () {
     return view('experience');
