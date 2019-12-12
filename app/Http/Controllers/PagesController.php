@@ -10,4 +10,24 @@ class PagesController extends Controller
     {
       return view('home');
     }
+
+    public function contact()
+    {
+      return view('contact');
+    }
+
+    public function experience()
+    {
+      return view('experience');
+    }
+
+    public function mywork()
+    {
+      return view('mywork');
+    }
+
+    public function references()
+    {
+      return view('references');
+    }
 }

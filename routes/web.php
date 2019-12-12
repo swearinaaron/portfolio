@@ -12,23 +12,7 @@
 */
 
 Route::get('/', 'PagesController@home');
-
-Route::get('/experience', function () {
-    return view('experience');
-});
-
-Route::get('/references', function () {
-    return view('references');
-});
-
-Route::get('/mywork', function () {
-    return view('mywork');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/github', function () {
-    return view('github');
-});
+Route::get('/', 'PagesController@contact');
+Route::get('/', 'PagesController@experience');
+Route::get('/', 'PagesController@mywork');
+Route::get('/', 'PagesController@references');
